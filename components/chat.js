@@ -7,7 +7,7 @@ export default function ChatInterface({user}) {
 
   //Setup .env later
   useEffect(() => {
-    const ws = new WebSocket('ws://squid-app-aa4kv.ondigitalocean.app/ws');
+    const ws = new WebSocket('wss://squid-app-aa4kv.ondigitalocean.app/ws');
 
     ws.addEventListener('open', () => {
       console.log('WebSocket connection established');
