@@ -9,25 +9,10 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { writeMessage } from "../routes/conn";
 import Layout from "../components/layouts/article";
 import ChatInterface from "../components/chat";
 
-const Home = () => {
-  const [msg, setMsg] = useState("");
-
-  const handleInputChange = (event) => {
-    setMsg(event.target.value);
-  };
-  
-  const writeMessage = () => {
-    let socket = new WebSocket("ws://localhost:8080/ws");
-    socket.send(msg);
-  
-
-
-  };
-  
+const Home = () => {  
   return (
     <Layout>
       <Container>
