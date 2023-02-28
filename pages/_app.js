@@ -12,7 +12,7 @@ function Website({ Component, pageProps, router }) {
         <AnimatePresence mode="wait" initial={true}>
           <Box>
             <Heading as="h2" variant="page-title">
-              Jorge M.R. de Farias - Chat App Prototype
+              DBless Anonymous Chat
             </Heading>
           </Box>
           <Component {...pageProps} key={router.route} />
